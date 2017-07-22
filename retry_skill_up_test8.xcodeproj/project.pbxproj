@@ -11,7 +11,6 @@
 		B69B1A791F235F3A006A625D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69B1A781F235F3A006A625D /* AppDelegate.swift */; };
 		B69B1A801F235F3A006A625D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69B1A7F1F235F3A006A625D /* Assets.xcassets */; };
 		B69B1A831F235F3A006A625D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69B1A811F235F3A006A625D /* LaunchScreen.storyboard */; };
-		B69B1A8E1F235F3A006A625D /* retry_skill_up_test8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69B1A8D1F235F3A006A625D /* retry_skill_up_test8Tests.swift */; };
 		B69B1A9B1F236128006A625D /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69B1A9A1F236128006A625D /* Chat.swift */; };
 		B69B1A9D1F236135006A625D /* ChatDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69B1A9C1F236135006A625D /* ChatDao.swift */; };
 		B69B1AA01F2363FF006A625D /* RealmDaoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69B1A9F1F2363FF006A625D /* RealmDaoHelper.swift */; };
@@ -52,7 +51,6 @@
 		B69B1A821F235F3A006A625D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B69B1A841F235F3A006A625D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B69B1A891F235F3A006A625D /* retry_skill_up_test8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = retry_skill_up_test8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B69B1A8D1F235F3A006A625D /* retry_skill_up_test8Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retry_skill_up_test8Tests.swift; sourceTree = "<group>"; };
 		B69B1A8F1F235F3A006A625D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B69B1A9A1F236128006A625D /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		B69B1A9C1F236135006A625D /* ChatDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatDao.swift; sourceTree = "<group>"; };
@@ -95,11 +93,11 @@
 		B69B1A6C1F235F3A006A625D = {
 			isa = PBXGroup;
 			children = (
+				CCF35C285F14CAC4BE5D345B /* Frameworks */,
+				FDCB6356522606A79B12A31B /* Pods */,
+				B69B1A761F235F3A006A625D /* Products */,
 				B69B1A771F235F3A006A625D /* retry_skill_up_test8 */,
 				B69B1A8C1F235F3A006A625D /* retry_skill_up_test8Tests */,
-				B69B1A761F235F3A006A625D /* Products */,
-				FDCB6356522606A79B12A31B /* Pods */,
-				CCF35C285F14CAC4BE5D345B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,11 +113,11 @@
 		B69B1A771F235F3A006A625D /* retry_skill_up_test8 */ = {
 			isa = PBXGroup;
 			children = (
-				B69B1AB41F2382D2006A625D /* Others */,
-				B69B1AAC1F236CBD006A625D /* Views */,
 				B69B1AA51F236B0C006A625D /* Controllers */,
 				B69B1A9E1F2363E5006A625D /* Helper */,
 				B69B1A981F2360F2006A625D /* Models */,
+				B69B1AB41F2382D2006A625D /* Others */,
+				B69B1AAC1F236CBD006A625D /* Views */,
 			);
 			path = retry_skill_up_test8;
 			sourceTree = "<group>";
@@ -127,9 +125,8 @@
 		B69B1A8C1F235F3A006A625D /* retry_skill_up_test8Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B69B1ABF1F23971B006A625D /* Views */,
 				B69B1AB71F238A04006A625D /* Models */,
-				B69B1A8D1F235F3A006A625D /* retry_skill_up_test8Tests.swift */,
+				B69B1ABF1F23971B006A625D /* Views */,
 				B69B1A8F1F235F3A006A625D /* Info.plist */,
 			);
 			path = retry_skill_up_test8Tests;
@@ -141,7 +138,7 @@
 				B69B1A991F236118006A625D /* Realm */,
 				B69B1AA31F23658A006A625D /* ChatListBuilder.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B69B1A991F236118006A625D /* Realm */ = {
@@ -150,55 +147,55 @@
 				B69B1A9A1F236128006A625D /* Chat.swift */,
 				B69B1A9C1F236135006A625D /* ChatDao.swift */,
 			);
-			name = Realm;
+			path = Realm;
 			sourceTree = "<group>";
 		};
 		B69B1A9E1F2363E5006A625D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				B69B1A9F1F2363FF006A625D /* RealmDaoHelper.swift */,
-				B69B1AA11F23645B006A625D /* Logger.swift */,
-				B69B1AB21F237BBD006A625D /* EdgeInsetableLabel.swift */,
 				B69B1AC21F23A17B006A625D /* Constants.swift */,
+				B69B1AB21F237BBD006A625D /* EdgeInsetableLabel.swift */,
+				B69B1AA11F23645B006A625D /* Logger.swift */,
+				B69B1A9F1F2363FF006A625D /* RealmDaoHelper.swift */,
 			);
-			name = Helper;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		B69B1AA51F236B0C006A625D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B69B1AB61F2382F0006A625D /* Startup */,
 				B69B1AB51F2382E8006A625D /* Chat */,
+				B69B1AB61F2382F0006A625D /* Startup */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		B69B1AAC1F236CBD006A625D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B69B1AAD1F236CE1006A625D /* ChatTableViewProvider.swift */,
 				B69B1AAF1F236CF1006A625D /* ChatTableViewCell.swift */,
+				B69B1AAD1F236CE1006A625D /* ChatTableViewProvider.swift */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B69B1AB41F2382D2006A625D /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				B69B1A841F235F3A006A625D /* Info.plist */,
 				B69B1A781F235F3A006A625D /* AppDelegate.swift */,
 				B69B1A7F1F235F3A006A625D /* Assets.xcassets */,
+				B69B1A841F235F3A006A625D /* Info.plist */,
 			);
-			name = Others;
+			path = Others;
 			sourceTree = "<group>";
 		};
 		B69B1AB51F2382E8006A625D /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				B69B1AA81F236B3C006A625D /* ChatViewController.swift */,
 				B69B1AAA1F236B43006A625D /* ChatViewController.storyboard */,
+				B69B1AA81F236B3C006A625D /* ChatViewController.swift */,
 			);
-			name = Chat;
+			path = Chat;
 			sourceTree = "<group>";
 		};
 		B69B1AB61F2382F0006A625D /* Startup */ = {
@@ -206,7 +203,7 @@
 			children = (
 				B69B1A811F235F3A006A625D /* LaunchScreen.storyboard */,
 			);
-			name = Startup;
+			path = Startup;
 			sourceTree = "<group>";
 		};
 		B69B1AB71F238A04006A625D /* Models */ = {
@@ -215,16 +212,16 @@
 				B69B1AB81F238A0C006A625D /* Realm */,
 				B69B1ABD1F238A32006A625D /* ChatListBuilderTests.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B69B1AB81F238A0C006A625D /* Realm */ = {
 			isa = PBXGroup;
 			children = (
-				B69B1AB91F238A18006A625D /* ChatTests.swift */,
 				B69B1ABB1F238A24006A625D /* ChatDaoTests.swift */,
+				B69B1AB91F238A18006A625D /* ChatTests.swift */,
 			);
-			name = Realm;
+			path = Realm;
 			sourceTree = "<group>";
 		};
 		B69B1ABF1F23971B006A625D /* Views */ = {
@@ -232,7 +229,7 @@
 			children = (
 				B69B1AC01F239725006A625D /* ChatTableViewCellTests.swift */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CCF35C285F14CAC4BE5D345B /* Frameworks */ = {
@@ -478,7 +475,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B69B1ABC1F238A24006A625D /* ChatDaoTests.swift in Sources */,
-				B69B1A8E1F235F3A006A625D /* retry_skill_up_test8Tests.swift in Sources */,
 				B69B1ABA1F238A18006A625D /* ChatTests.swift in Sources */,
 				B69B1AC11F239725006A625D /* ChatTableViewCellTests.swift in Sources */,
 				B69B1ABE1F238A32006A625D /* ChatListBuilderTests.swift in Sources */,
@@ -502,6 +498,7 @@
 				B69B1A821F235F3A006A625D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -608,7 +605,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = retry_skill_up_test8/Info.plist;
+				INFOPLIST_FILE = retry_skill_up_test8/Others/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.retry-skill-up-test8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -622,7 +619,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = retry_skill_up_test8/Info.plist;
+				INFOPLIST_FILE = retry_skill_up_test8/Others/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.retry-skill-up-test8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
